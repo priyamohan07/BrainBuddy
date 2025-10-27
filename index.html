@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrainBuddy AI Study Companion</title>
+  <script src="app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-3xl mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-6">🧠 BrainBuddy</h1>
+
+    <textarea id="input" class="w-full p-4 rounded border" rows="8" placeholder="Paste your text here..."></textarea>
+
+    <div class="flex flex-wrap gap-3 justify-center my-4">
+      <button onclick="summarize()" class="btn">Summarize</button>
+      <button onclick="simplify()" class="btn">Simplify</button>
+      <button onclick="quiz()" class="btn">Generate Quiz</button>
+      <button onclick="translateText()" class="btn">Translate</button>
+      <button onclick="grammarCheck()" class="btn">Grammar Check</button>
+    </div>
+
+    <textarea id="output" class="w-full p-4 rounded border" rows="8" placeholder="Output will appear here..."></textarea>
+  </div>
+
+  <style>
+    .btn {
+      background: #2563eb;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+    .btn:hover { background: #1e40af; }
+  </style>
+</body>
+</html>
